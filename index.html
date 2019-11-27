@@ -11,31 +11,40 @@
 </head>
 <body>
 
-  <header class="book-ends max-length gutter pad-t-1-2 pad-b-1-2">
+  <ul class="skip-links">
+    <li>
+      <a href="#main">Jump to main content</a>
+    </li>
+    <li>
+      <a href="#nav">Jump to main content</a>
+    </li>
+  </ul>
+
+  <header role="banner" class="book-ends max-length gutter pad-t-1-2 pad-b-1-2">
     <strong class="book-title giga not-bold">Twenty Thousand Leagues Under the Sea</strong>
     <p class="book-author push-0"><span class="book-author-by micro italic">by</span> <span class="mega">Jules Verne</span></p>
   </header>
 
-  <article class="max-length">
+  <article role="main" id="main" tabindex="0" class="max-length">
     <header class="chapter-ends chapter-name pad-t-1-2 pad-b-1-2 gutter push relative">
       <hgroup class="chapter-details">
         <h1 class="chapter-number not-bold push-0 italic kilo">Chapter XVIII</h1>
         <h2 class="chapter-title not-bold push-0 peta">The Poulps</h2>
       </hgroup>
-      <nav>
+      <nav role="navigation" id="nav" tabindex="0">
         <ul class="list-group-inline text-center push-0 pin-rc gutter-1-2">
           <li>
-            <a class="btn chapter-btn" href="chapter-xvii.html">
+            <a aria-label="icon-1" class="btn chapter-btn" href="chapter-xvii.html">
               <i class="icon i-1"><svg><use xlink:href="images/icons.svg#prev"></use></svg></i>
             </a>
           </li>
           <li>
-            <a class="btn chapter-btn" href="contents.html">
+            <a aria-label="icon-2" class="btn chapter-btn" href="contents.html">
               <i class="icon i-1"><svg><use xlink:href="images/icons.svg#contents"></use></svg></i>
             </a>
           </li>
           <li>
-            <a class="btn chapter-btn" href="chapter-xix.html">
+            <a aria-label="icon-3" class="btn chapter-btn" href="chapter-xix.html">
               <i class="icon i-1"><svg><use xlink:href="images/icons.svg#next"></use></svg></i>
             </a>
           </li>
@@ -116,17 +125,17 @@
       <nav>
         <ul class="list-group-inline text-center push-0">
           <li>
-            <a class="btn chapter-btn" href="chapter-xvii.html">
+            <a aria-label="icon-4" class="btn chapter-btn" href="chapter-xvii.html">
               <i class="icon i-1"><svg><use xlink:href="images/icons.svg#prev"></use></svg></i>
             </a>
           </li>
           <li>
-            <a class="btn chapter-btn" href="contents.html">
+            <a aria-label="icon-5" class="btn chapter-btn" href="contents.html">
               <i class="icon i-1"><svg><use xlink:href="images/icons.svg#contents"></use></svg></i>
             </a>
           </li>
           <li>
-            <a class="btn chapter-btn" href="chapter-xix.html">
+            <a aria-label="icon-6" class="btn chapter-btn" href="chapter-xix.html">
               <i class="icon i-1"><svg><use xlink:href="images/icons.svg#next"></use></svg></i>
             </a>
           </li>
@@ -135,7 +144,7 @@
     </footer>
   </article>
 
-  <footer class="book-ends text-center max-length gutter pad-t-1-2 pad-b-1-2">
+  <footer class="book-ends text-center max-length gutter pad-t-1-2 pad-b-1-2" role="contentinfo">
     <small class="micro">Twenty Thousand Leagues Under the Sea © Jules Verne, 1870.</small>
   </footer>
 
